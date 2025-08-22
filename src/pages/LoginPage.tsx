@@ -5,7 +5,7 @@ import { useAuthStore } from '../lib/store';
 export function LoginPage() {
   const navigate = useNavigate();
   const { signIn } = useAuthStore();
-  const [error, setError] = React.useState<string | null>(null);
+  const [error, setError] = React.useState<string | null>(null); 
 
   const handleGoogleSignIn = async () => {
     try {
